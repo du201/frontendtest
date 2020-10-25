@@ -1,0 +1,45 @@
+.roster-wrapper {
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.grey-content {
+  background-color: #F7F7F7 !important;
+}
+
+#menu-switch {
+  display:none;
+  margin-right: 1.8rem;
+}
+
+.menu-sidebar-hostpage {
+  width: 30.25rem;
+  background-color: #F7F7F7 !important;
+}
+
+#menu-sidebar-top {
+  clear: both;
+  margin-top: 1.4rem;
+}
+
+/* #default-button {
+  position: fixed;
+  bottom:0;
+  background-color:red;
+} */
+
+@media (max-width: 1199.98px) {
+  .display-none {
+  display: none;
+}
+
+  #menu-switch {
+    display:inline-block;
+  }
+
+  .menu-sidebar-hostpage {
+    width: 100%;
+    background-color: #F7F7F7 !important;
+    height: 5rem;
+  }
+}

@@ -1,0 +1,154 @@
+@font-face {
+  font-family: "gotham-black";
+  src: url(./fonts/Gotham-Black.otf);
+}
+
+@font-face {
+  font-family: "gotham-book";
+  src: url(./fonts/gotham-book.otf);
+}
+
+@font-face {
+  font-family: "gotham-medium";
+  src: url(./fonts/gotham-medium.otf);
+}
+
+@font-face {
+  font-family: "gotham-xlight";
+  src: url(./fonts/gotham-xlight__.otf);
+}
+
+:root {
+  --fnt-bold: "gotham-black";
+  --fnt-medium: "gotham-medium";
+  --fnt-regular: "gotham-book";
+  --fnt-thin: "gotham-xlight";
+  --trans-time: 0.15s;
+}
+
+.fnt-bold {
+  font-family: var(--fnt-bold);
+}
+
+.fnt-medium {
+  font-family: var(--fnt-medium);
+}
+
+.fnt-regular {
+  font-family: var(--fnt-regular);
+}
+
+.fnt-thin {
+  font-family: var(--fnt-thin);
+}
+
+h1 {
+  font-size: 1.875rem !important;
+  color: #707070;
+}
+
+h2 {
+  font-size: 1.5625rem !important;
+  color: #707070;
+}
+
+.center-horizontal {
+  margin-left:auto;
+  margin-right:auto;
+  width:6.25rem;
+}
+
+h3 {
+  font-size: 1.1875rem !important;
+  color: #707070;
+}
+
+.grey-text {
+  color: #707070;
+}
+
+body {
+  margin: 0;
+  font-family: 'gotham-book', sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 40rem; /* 800px by default */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+a:hover
+{
+  color: #343A40 !important;
+  text-decoration: none;
+  transition-duration: 0.15s !important;
+  cursor: pointer;
+}
+
+a:active {
+  color: #505050 !important;
+  opacity: 100% !important;
+}
+
+.btn {
+  transition-duration: 0.15s !important;
+}
+
+.grey-text {
+  color: #707070 !important;
+}
+
+.no-underline {
+  text-decoration: none !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .title-homepage {
+    font-size: 6rem;
+    font-weight: 800;
+    color: #707070;
+  }
+}
+
+.force-inline {
+  display: inline-block;
+}
+
+.flex-break {
+  flex-basis: 100%;
+  height: 0;
+}
+
+.text-center {
+  text-align:center;
+}
+
+/* .gold-text {
+  color:#FFDFB1;
+  text-shadow: 2px 2px;
+}
+
+.silver-text {
+  color:#C0C0C0;
+  text-shadow: 2px 2px;
+}
+
+.copper-text {
+  color:#CD8032;
+  text-shadow: 2px 2px;
+} */
+
+.gold-text {
+  background-color:#FFDFB1;
+}
+
+.silver-text {
+  background-color:#C0C0C0;
+}
+
+.copper-text {
+  background-color:#CD8032;
+}

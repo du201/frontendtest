@@ -1,0 +1,98 @@
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline-block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+input[type="checkbox"][id^="check"] {
+  display: none;
+}
+
+label[for^="check"] {
+  padding: 0.6rem;
+  display: inline-block;
+  margin-right: 2rem;
+  margin-top:1.5rem;
+  cursor: pointer;
+}
+
+label[for="checkDivide"] {
+  padding: 0.6rem;
+  display: inline-block;
+  margin-right: 0rem;
+  cursor: pointer;
+}
+
+
+label[for^="check"]::before {
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  width: 1.8rem;
+  height: 1.8rem;
+  text-align: center;
+  transition-duration: var(--trans-time);
+  transform: scale(0);
+  box-shadow: 0rem 0rem 0.01rem #888888
+} 
+
+
+label img {
+  height: 1.8rem;
+  width: 1.8rem;
+  transition-duration: var(--trans-time);
+}
+
+
+
+input:checked + label[for^="check"]:before {
+  content: "";
+  background-color: #F8C741;
+  transform: scale(2);
+}
+
+input:checked + label img {
+  transform: scale(1);
+  /* box-shadow: 0 0 5px #333; */
+  z-index: -1;
+} 
+
+.small-input-size {
+  width: 4em;
+}
+
+.setting-menu {
+  position: relative;
+  bottom: 9.375rem;
+}
+
+.small-font {
+  font-size:70%;
+}
+
+.operator-title-shift {
+  position: relative;
+  left: -2.25rem;
+}
+
+.text-align-left {
+  text-align: left;
+}
+
+#default-button {
+  margin: auto;
+}
+
+/* #default-button {
+  position: fixed;
+  left: 12rem;
+  bottom: 3rem;
+} */
