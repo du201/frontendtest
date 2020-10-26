@@ -367,7 +367,7 @@ class App extends Component {
    */
   listenToServerDisconnect = () => {
     socket.on(DISCONNECT, () => {
-      this.notifyError("Disconnected from the Server, go back to the home page");
+      this.notifyError("Disconnected from the Server, going back to the home page");
       this.stopListenToGameEvent();
       //set all of the game-related states back to default
       this.backToDefaultAllStates();
