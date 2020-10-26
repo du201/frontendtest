@@ -482,7 +482,7 @@ class App extends Component {
     this.setState({
       loading: true
     });
-    this.startGame();
+    this.waitForStartGame();
   };
 
 
@@ -490,7 +490,7 @@ class App extends Component {
   /**
    * Start the game after receive the GAME_STARTED
    */
-  startGame = () => {
+  waitForStartGame = () => {
     socket.once(GAME_STARTED, (settings) => {
       //reset some of the states
       clearTimeout(startGameButtonTimeObj);
@@ -652,7 +652,7 @@ class App extends Component {
         this.setPlayerColor(roster);
       });
       //start to wait for the host to start the game and then go to the "multiPlayerGamePage"
-      this.startGame();
+      this.waitForStartGame();
 
       //if the host of the room exits, all the players go back to the third page
       socket.once(ROOM_CLOSED, () => {
@@ -1127,6 +1127,8 @@ class App extends Component {
             playerRoster={this.state.playerRoster}
             playerSolved={this.state.playerSolved}
             playerColor={this.state.playerColor}
+            roomNumber={this.state.roomNumber}
+            maxPlayerNum={this.state.maxPlayerNum}
             pageController={this.state.pageController}
           ></WaitForHostPage>
         );
