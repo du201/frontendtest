@@ -57,12 +57,13 @@ function HomePage(props) {
                 display={t("Solver")}
               />
             </div>
-            <div className="btn-homepage fnt-bold">
+            {/* // todo: add the singleplayer in August 2021 */}
+            {/* <div className="btn-homepage fnt-bold">
               <HomePageButton
                 onClick={props.pressSinglePlayModeButton}
                 display={t("Singleplayer")}
               />
-            </div>
+            </div> */}
             <div className="btn-homepage fnt-bold">
               <HomePageButton
                 onClick={props.pressGameModeButton}

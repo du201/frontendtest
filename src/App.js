@@ -1292,7 +1292,7 @@ class App extends Component {
           <link rel="shortcut icon" href={tabImage} />
           <style>
             @import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta&display=swap');
-</style>import {deepCopy} from './components/deepCopy';
+          </style>import {deepCopy} from './components/deepCopy';
 
         </Helmet>
         {this.renderSwitch(this.state.pageController)}
